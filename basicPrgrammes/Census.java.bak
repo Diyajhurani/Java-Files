@@ -1,0 +1,14 @@
+class Census
+{
+	public static void main(String[]args)
+	{
+		long curPop=312032486;
+		System.out.println("The current population is:"+curPop);
+		long seconds=(365*24*60*60)*5;
+		float birth=seconds/7;
+		float death=seconds/13;
+		float immigrant=seconds/45;
+		int total = (curPop+birth-death+immigrant);
+		System.out.println("The population after 5 years is:"+total);
+	}
+}
