@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Game
+{
+	public static void main(String[]args)
+	{
+		Scanner sc=new Scanner(System.in);
+		int rNum=0; // store a random number btw 1 to 3
+		for (; ; )
+		{
+			//math.random() gen a double value from 0.00
+			//we multiply the same value by 10
+			//and then to get an integer we used typecasting
+
+			int num=(int)(Math.random()*10);
+			if(num>=1&&num<=3) //to check if the digit is btw 1 to 3
+			{
+				rNum=num; //if the cond is true then only store the value
+				break; //if digit found btw 1 to 3 terminate the loop
+			}
+		}
+		//
